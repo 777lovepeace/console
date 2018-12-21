@@ -1,16 +1,12 @@
 <?php
 namespace app\index\controller;
 
-class Index extends Base
-{
+use think\Controller;
 
+class Base extends Controller
+{
     public function __construct()
     {
         parent::__construct();
-    }
-
-    public function index()
-    {
-        return $this->fetch('login');
     }
 }
